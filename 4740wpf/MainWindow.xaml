@@ -1,0 +1,31 @@
+﻿<Window x:Class="_4740wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Event Log 4740 Search" Height="330" Width="500">
+
+    <StackPanel>
+        <TextBlock Text="Input login here:" 
+                   Margin="4" 
+                   HorizontalAlignment="Left"/>
+        <Grid>
+
+            <TextBox x:Name="usernameTextBox" 
+                     Height="20"
+                     Width="280"
+                 HorizontalAlignment="Left"
+                 Margin="4"/>
+            <Button Content="Search" 
+                    Click="searchButton_Click" 
+                    HorizontalAlignment="Right"
+                    Margin="4"
+                    Height="20"
+                    Width="180"/>
+        </Grid>
+        <TextBox x:Name="resultTextBox" TextWrapping="Wrap" 
+                 VerticalScrollBarVisibility="Auto" 
+                 HorizontalScrollBarVisibility="Auto" 
+                 Margin="4" Height="220"/>
+    </StackPanel>
+
+
+</Window>
